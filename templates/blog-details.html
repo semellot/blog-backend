@@ -31,7 +31,7 @@
       <div class="row">
         <div class="col-lg-8">
             <div class="main_blog_details">
-                <img class="img-fluid" src="{% if post.image_url %}{{ post.image_url }}{% else %}{% static 'img/banner/blog.png' %}{% endif %}" alt="">
+                <img class="img-fluid" src="{% if post.image_url %}{{ post.image_url }}{% else %}{% static 'img/banner/blog.png' %}{% endif %}" alt="{{ post.title }}">
                 <h4>{{ post.title }}</h4>
                 <div class="user_details">
                   <div class="mt-sm-0 mt-3">
